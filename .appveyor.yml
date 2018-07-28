@@ -14,6 +14,7 @@ install:
   - if defined MSYS_BITS set PATH=%PATH%;C:\msys64\mingw%MSYS_BITS%\bin
   - rustc -V
   - cargo -V
+  - gcc -v
 
 build_script:
   - git submodule -q update --init
